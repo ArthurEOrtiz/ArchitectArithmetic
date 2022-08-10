@@ -15,7 +15,7 @@ namespace ArchitectArithmetic
             
             double totalCost = totalArea * flooringCost;
 
-            Console.WriteLine($"The total cost of flooring Teotihuacan is {totalCost} pesos. Which has and area of {totalArea} square feet at a cost of {flooringCost} per square meter.");
+            Console.WriteLine($"The total cost of flooring Teotihuacan is {Math.Round(totalCost)} pesos. Which has and area of {Math.Round(totalArea)} square feet at a cost of {flooringCost} per square meter.");
 
         }
 

@@ -6,9 +6,17 @@ namespace ArchitectArithmetic
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RectangleArea(4,5));
-            Console.WriteLine(CircleArea(4));
-            Console.WriteLine(TriangleArea(10,9));
+            double triangleArea = TriangleArea(500, 750);
+            double squareArea = RectangleArea(2500,1500);
+            double circleArea = CircleArea(375)/2;
+
+            double totalArea = triangleArea + squareArea + circleArea;
+            double flooringCost = 180.00;
+            
+            double totalCost = totalArea * flooringCost;
+
+            Console.WriteLine($"The total cost of flooring Teotihuacan is {totalCost} pesos. Which has and area of {totalArea} square feet at a cost of {flooringCost} per square meter.");
+
         }
 
         static double RectangleArea( double length, double width)
